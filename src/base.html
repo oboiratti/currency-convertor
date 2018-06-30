@@ -1,0 +1,54 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info">
+    <div class="container">
+        <a class="navbar-brand" href="#">Currency Converter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3 mt-5">
+            <div class="card border-info mb-3">
+                <div class="card-header">Conversion Form</div>
+                <div class="card-body text-info">
+                    <form id="convertForm" action="#">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Amount</label>
+                            <div class="col-sm-8">
+                                <input type="number" id="fromAmount" class="form-control" placeholder="Enter amount">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">From</label>
+                            <div class="col-sm-8">
+                                <select id="fromCurrency" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">To</label>
+                            <div class="col-sm-8">
+                                <select id="toCurrency" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Result</label>
+                            <div class="col-sm-8">
+                                <input type="number" id="toAmount" class="form-control" disabled>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8 offset-sm-4">
+                            <button type="submit" id="convert" class="btn btn-info btn-block">Convert</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
