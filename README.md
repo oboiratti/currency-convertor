@@ -10,3 +10,6 @@ Just run:
 
 # Running
 `npm start`
+
+# Demo
+Demo version is hosted at https://oboiratti.github.io/currency-converter-demo
