@@ -33,3 +33,18 @@ self.addEventListener('fetch', function (event) {
         })
     );
 });
+
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+      caches.keys().then(function(cacheNames) {
+        return Promise.all(
+          cacheNames.filter(function(cacheName) {
+            return cacheName.startsWith('currency-converter-') &&
+                   !allCaches.includes(cacheName);
+          }).map(function(cacheName) {
+            return caches.delete(cacheName);
+          })
+        );
+      })
+    );
+  });
