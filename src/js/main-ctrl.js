@@ -5,7 +5,7 @@ export class MainCtrl {
     constructor() { }
 
     getCurrencies() {
-        return fetch('/api/v5/currencies').then(res => {
+        return fetch('https://free.currencyconverterapi.com/api/v5/currencies').then(res => {
             if (res.status !== 200) {
                 return;
             }

@@ -3,7 +3,7 @@ import { MainCtrl } from './js/main-ctrl';
 import { MainView } from './js/main-view';
 import { Init } from './sw';
 
-// $("#preloader-body").hide();
+$("#preloader-body").hide();
 document.write(require("./base.html"));
 
 var mv = new MainView()

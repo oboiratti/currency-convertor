@@ -70,7 +70,7 @@ export class MainView {
                 return;
             }
 
-            fetch(`/api/v5/convert?q=${query}`).then(res => {
+            fetch(`https://free.currencyconverterapi.com/api/v5/convert?q=${query}`).then(res => {
                 res.json().then(data => {
                     this.computeResult(data.results[query].val, +fromAmount, result)
                     this.saveQueries(data, query)
